@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    {% load bootstrap4 %}
+    {% bootstrap_css%}
+
+    {%block extrastatic%}
+    {%endblock%}
+
+    <link rel="stylesheet" href={% static 'css/styles.css' %}
+
+  </head>
+  <body>
+    {%include 'base_templates/navbar.html'%}
+
+    {%block content%}
+    {#The content of templates#}
+
+    {%endblock content%}
+  {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

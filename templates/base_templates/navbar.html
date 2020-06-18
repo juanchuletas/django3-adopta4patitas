@@ -1,0 +1,27 @@
+{%load static %}
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3b83bd;">
+  <img src="{% static 'img/kyoodle_logo_5.png' %}" id="kyoodle-logo">
+  {# <a class="navbar-brand" href="#" style="color: white"></a> #}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'mascotas_disponibles' %}"style="color: white">Adopciones<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " href="{% url 'lista_adopciones' %}" style="color: white" >Lista Adoptantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'lugares_petfriendly' %}" style="color: white" >Petfriendly</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white" >Favoritos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{% url 'lista_veterinarias' %}" style="color: white" >Emergencias</a>
+      </li>
+    </ul>
+  </div>
+</nav>

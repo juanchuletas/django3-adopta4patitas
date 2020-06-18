@@ -1,0 +1,35 @@
+{% extends 'base_templates/base.html' %}
+
+{% block content %}
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<td>No. Solicitud</td>
+      <td>Foto</td>
+			<td>Adoptante</td>
+			<td>Acciones</td>
+		</tr>
+
+	</thead>
+	<tbody>
+
+{% if datos_adoptante %}
+		{% for adoptante in datos_adoptante %}
+		<tr>
+			<td>{{ adoptante.id }}</td>
+      <td><img src="/media/adoptantes/images/IMG-0200.JPG" height=140 width=100></td>
+			<td>{{ adoptante.nombre }} {{adoptante.apellido}}</td>
+			<td>
+				<a class="btn btn-primary" href="#">Editar</a>
+				<a class="btn btn-danger" href="#">Eliminar</a>
+			</td>
+		</tr>
+		{% endfor %}
+
+		{% else %}
+		<h1>No hay registros de solicitudes</h1>
+		{% endif %}
+  </tbody>
+</table>
+{% endblock content%}
