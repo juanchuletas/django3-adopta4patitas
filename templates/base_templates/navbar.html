@@ -1,7 +1,7 @@
 {%load static %}
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3b83bd;">
-  <img src="{% static 'img/kyoodle_logo_5.png' %}" id="kyoodle-logo">
-  {# <a class="navbar-brand" href="#" style="color: white"></a> #}
+
+  <a class="navbar-brand" href="{% url 'main_page'%}" style="color: white"><img src="{% static 'img/kyoodle_logo_5.png' %}" id="kyoodle-logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

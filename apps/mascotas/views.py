@@ -4,7 +4,7 @@ from apps.mascotas.models import Mascota
 # Create your views here.
 
 def home(request):
-    return render(request,'base_templates/base.html')
+    return render(request,'base_templates/home.html')
 def lista_mascotas(request):
     mascota = Mascota.objects.all()
     contexto = {"datos_mascota":mascota}
